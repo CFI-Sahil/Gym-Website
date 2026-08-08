@@ -1,6 +1,7 @@
 import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logoImg from '../assets/images/logo.jpg';
 import { motion, AnimatePresence, useScroll, useSpring, useMotionValueEvent } from 'framer-motion';
 
 const Navbar = () => {
@@ -49,7 +50,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
         {/* Logo */}
         <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-4">
-          <img src="/src/assets/images/logo.jpg" alt="Power Factory Logo" className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-sm block" />
+          <img src={logoImg} alt="Power Factory Logo" className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-sm block" />
           <div className="font-headline-md text-headline-md text-tertiary tracking-widest uppercase flex items-center gap-2">
             <span className="hidden sm:block">POWER FACTORY</span>
             <span className="sm:hidden text-lg">POWER FACTORY</span>

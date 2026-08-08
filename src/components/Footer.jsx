@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import logoImg from '../assets/images/logo.jpg';
 
 const Footer = () => {
   return (
@@ -6,10 +7,12 @@ const Footer = () => {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center md:text-left">
         <div className="md:col-span-6 flex flex-col justify-between mb-8 md:mb-0 items-center md:items-start">
           <div className="flex flex-col items-center md:items-start">
-            <div className="font-headline-md text-headline-md text-on-surface uppercase mb-4 flex items-center justify-center md:justify-start gap-4">
-              <img src="/src/assets/images/logo.jpg" alt="Power Factory Logo" className="h-8 w-8 md:h-10 md:w-10 object-cover rounded-sm block" />
-              POWER FACTORY
-            </div>
+            <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-4 mb-4">
+              <img src={logoImg} alt="Power Factory Logo" className="h-8 w-8 md:h-10 md:w-10 object-cover rounded-sm block" />
+              <div className="font-headline-md text-xl md:text-2xl text-tertiary tracking-widest uppercase flex items-center gap-2">
+                POWER FACTORY
+              </div>
+            </Link>
             <p className="font-body-md text-body-md text-on-surface-variant max-w-sm mb-10 md:mb-16">
               Elite performance training facility for athletes who demand more.
             </p>
