@@ -50,7 +50,7 @@ const Navbar = () => {
       <div className="flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop w-full max-w-container-max mx-auto">
         {/* Logo */}
         <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-4">
-          <img src={logoImg} alt="Power Factory Logo" className="h-10 w-10 md:h-12 md:w-12 object-cover rounded-sm block" />
+          <img src={logoImg} alt="Power Factory Logo" className="h-16 w-16 md:h-20 md:w-20 object-contain rounded-sm block" />
           <div className="font-headline-md text-headline-md text-tertiary tracking-widest uppercase flex items-center gap-2">
             <span className="hidden sm:block">POWER FACTORY</span>
             <span className="sm:hidden text-lg">POWER FACTORY</span>

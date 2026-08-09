@@ -8,8 +8,8 @@ const Footer = () => {
         <div className="md:col-span-6 flex flex-col justify-between mb-8 md:mb-0 items-center md:items-start">
           <div className="flex flex-col items-center md:items-start">
             <Link to="/" onClick={() => window.scrollTo(0, 0)} className="flex items-center gap-4 mb-4">
-              <img src={logoImg} alt="Power Factory Logo" className="h-8 w-8 md:h-10 md:w-10 object-cover rounded-sm block" />
-              <div className="font-headline-md text-xl md:text-2xl text-tertiary tracking-widest uppercase flex items-center gap-2">
+              <img src={logoImg} alt="Power Factory Logo" className="h-16 w-16 md:h-24 md:w-24 object-contain rounded-sm block" />
+              <div className="font-headline-md text-2xl md:text-4xl text-tertiary tracking-widest uppercase flex items-center gap-2">
                 POWER FACTORY
               </div>
             </Link>
